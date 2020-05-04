@@ -5,13 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Destination Index Page</title>
     <link rel="stylesheet" href="index.css">
-    <script src="index.js"></script>
+    <script src="index.js" defer></script>
 </head>
 <body>
     <h1> Destination Index Page</h1> 
-    <form action="http://localhost:3000/destinations" method="get">
-       
+   
+        <form action="http://localhost:3000/destinations" method="get">
+        <label>Desired Season:</label>
+        <select name="season">
+            <option value="Spring">Spring</option>
+            <option value="Summer">Summer</option>
+            <option value="Fall">Fall</option>
+            <option value="Winter">Winter</option>
+        </select>
+        <label>Desired Travel Party:</label>
+        <select name="travel_party">
+            <option value="Good for solo travelers">Good for Solo Travelers</option>
+            <option value="Good for couples">Good for couples</option>
+            <option value="Good for family">Good for family</option>
+            <option value="Good for large groups">Good for large groups</option>
+        </select>
         <input type="submit" value = "Find my perfect destination!">
     </form>
 </body>
 </html>
+
+
+
