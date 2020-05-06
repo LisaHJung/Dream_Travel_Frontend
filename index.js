@@ -5,14 +5,22 @@ const dropdown_travel_party = document.getElementById("dropdown_travel_party")
 
 let search = document.querySelector('#search')
 let params = new URLSearchParams(window.location.search)
-let season = params.get('season')
+let month = params.get('month')
 let travel_party = params.get("travel_party")
-console.log(season)
-if(season && travel_party) {
-    fetch(`http://localhost:3000/destinations?season=${season}&travel_party=${travel_party}`)
+let primary_reason = params.get("primary_reason")
+let cost = params.get("cost")
+
+const searchParams = new URLSearchParams(window.location.search)
+const id = searchParams.get('id')
+
+if(month && travel_party && primary_reason && cost) {
+    fetch(`http://localhost:3000/destinations?month=${month}&travel_party=${travel_party}&primary_reason=${primary_reason}&cost=${cost}`)
         .then(response => response.json())
-        .then(console.log)
-}
+        .then(destinations => destinations.forEach(destination => {
+            const h1 = document.createElement("h1")
+            h1.innerHTML = `<a href="show.html?id=${destination.id}">${destination.name}</a>`
+            document.body.appendChild(h1)                   
+}))
 
 // .then(response => response.json())
 // .then(
@@ -23,7 +31,7 @@ if(season && travel_party) {
     
 // }))
 
-// Person.find_by(name: 'Spartacus', rating: 4)
+
 
 // fetch("http://localhost:3000/destinations")
 // .then(response => response.json())
@@ -37,5 +45,4 @@ if(season && travel_party) {
 //     option_travel_party.innerText = destination.travel_party
 //     option_travel_party.value = destination.id 
 //     dropdown_travel_party.appendChild(option_travel_party)
-
-// }))
+}
