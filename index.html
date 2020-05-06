@@ -17,19 +17,43 @@
         <p> Use the filter search to find your next adventure destination.</p>
         <form action="http://localhost:3001" method="get">
             <label>Desired Season:</label>
-            <select name="season" id = "search">
-                <option value="Spring">Spring</option>
-                <option value="Summer">Summer</option>
-                <option value="Fall">Fall</option>
-                <option value="Winter">Winter</option>
+            <select name="month" id = "search">
+                <option value="January">January</option>
+                <option value="February">February</option>
+                <option value="March">March</option>
+                <option value="April">April</option>
+                <option value="May">May</option>
+                <option value="June">June</option>
+                <option value="July">July</option>
+                <option value="August">August</option>
+                <option value="September">September</option>
+                <option value="October">October</option>
+                <option value="November">November</option>
+                <option value="December">December</option>
             </select>
             <label>Desired Travel Party:</label>
             <select name="travel_party">
-                <option value="Good for solo travelers">Good for Solo Travelers</option>
-                <option value="Good for couples">Good for couples</option>
-                <option value="Family Friendly">Good for family</option>
-                <option value="Good for large groups">Good for large groups</option>
+                <option value="Solo">Traveling Solo</option>
+                <option value="Couples">Traveling as a couple</option>
+                <option value="Family">Traveling as a family</option>
+                <option value="Group">Traveling with a group</option>
             </select>
+            <label>Primary Reason for Travel:</label>
+            <select name="primary_reason">
+                <option value="">Traveling Solo</option>
+                <option value="Outdoor adventures">Outdoor Adventures</option>
+                <option value="Thrill-seeker's paradise">Thrill Seeking</option>
+                <option value="Relaxation">Relaxation</option>
+                <option value="Jaw dropping scenery">Jaw Dropping Scenery</option>
+                <option value="Foodies' heaven">Foodies' Heaven</option>
+                <option value="Cultural immersion">Cultural Immersion</option>
+            </select>
+            <label>Expected Cost</label>
+            <select name="Cost">
+                <option value="$">$ On a budget</option>
+                <option value="$$">$$ Mid Range</option>
+                <option value="$$$">$$$ Luxury Vacation</option>
+            <select>
             <input type="submit" value = "Find my perfect destination!">
         </form>
     </div>
