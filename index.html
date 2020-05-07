@@ -8,16 +8,16 @@
     <script src="index.js" defer></script>
 </head>
 <body>
-    <div id="wrapper">
-        <img src = "https://www.tripsavvy.com/thmb/qeJZ2GNovDJ_xj1bEjsO7VAYfJk=/960x0/filters:no_upscale():max_bytes(150000):strip_icc()/Waitomo-b982230b249a4eaf84a8e9cb07347591.jpg">
-    </div>
-    <div class="content">
-        <h1> Your next greatest adventure awaits!</h1> 
-        <form action="http://localhost:3000/users" method="post">
-            <label>Enter your unique user name</label>
-            <input type="text" id="user_name" name="user_name">
-            <input type="submit" value = "Create my account">
+    <div>
+        <h1>DreamTravelApp</h1>
+        <form id="user_input" action="http://localhost:3000/users" method="post">
+            <label id="label">Enter your unique user name:  </label>
+            <input id="button"
+            type="text" id="user_name" name="user_name">
+            <input id="button" type="submit" value = "Create my account">
         </form>
+        <h2> Your next great adventure awaits!</h2>
+        
     </div>
 </body>
 </html>
