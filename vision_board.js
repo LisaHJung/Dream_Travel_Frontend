@@ -1,9 +1,9 @@
 console.log("vision_board.js is connected")
 
 const searchParams = new URLSearchParams(window.location.search)
-const id = searchParams.get('id')
+const destination_id = searchParams.get('destination_id')
 
-fetch(`http://localhost:3000/vision_board/${id}`)
+fetch(`http://localhost:3000/destinations/${destination_id}`)
     .then(response => response.json())
     .then(displayInfo)
 
@@ -18,13 +18,5 @@ function displayInfo(destination) {
 
     const p1 = document.createElement("p1")
     p1.innerText = destination.location
-    document.body.appendChild(p1)
-
-    const p = document.createElement("p")
-    p.innerText = destination.description 
-    document.body.appendChild(p)
-    
-    // pinToVisionBoard(destination)
-    jumpToVisionBoard(destination)
-    
+    document.body.appendChild(p1)    
 }

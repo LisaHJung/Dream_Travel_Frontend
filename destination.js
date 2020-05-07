@@ -6,8 +6,6 @@ const destinationFromUserId=document.querySelector("#user_id")
 const destinationID=document.querySelector("#destination_id")
 destinationFromUserId.value=user_id
 destinationID.value=destination_id
-console.log(destination_id)
-
 
 fetch(`http://localhost:3000/destinations/${destination_id}`)
     .then(response => response.json())
