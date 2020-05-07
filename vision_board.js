@@ -1,8 +1,9 @@
-console.log("destination.js working")
+console.log("vision_board.js is connected")
+
 const searchParams = new URLSearchParams(window.location.search)
 const id = searchParams.get('id')
 
-fetch(`http://localhost:3000/destinations/${id}`)
+fetch(`http://localhost:3000/vision_board/${id}`)
     .then(response => response.json())
     .then(displayInfo)
 
@@ -27,16 +28,3 @@ function displayInfo(destination) {
     jumpToVisionBoard(destination)
     
 }
-
-
-
-// function pinToVisionBoard
-//     fetch("http://localhost3000/vision_boards")
-
-function jumpToVisionBoard(destination){
-    const p2 = document.createElement("p")
-    p2.innerHTML = `<a href ="vision_board.html">Take me to my travel vision board</a>`
-    document.body.appendChild(p2)
-}
-
-
