@@ -15,51 +15,9 @@
         <h1> Your next greatest adventure awaits!</h1> 
         <form action="http://localhost:3000/users" method="post">
             <label>Enter your unique user name</label>
-            <input type="text" name="user_name">
+            <input type="text" id="user_name" name="user_name">
             <input type="submit" value = "Create my account">
         </form>
-        <p> Use the filter search to find your next adventure destination.</p>
-        <form action="http://localhost:3001" method="get">
-            <label>Desired Month of Travel:</label>
-            <select name="month" id = "search">
-                <option value="January">January</option>
-                <option value="February">February</option>
-                <option value="March">March</option>
-                <option value="April">April</option>
-                <option value="May">May</option>
-                <option value="June">June</option>
-                <option value="July">July</option>
-                <option value="August">August</option>
-                <option value="September">September</option>
-                <option value="October">October</option>
-                <option value="November">November</option>
-                <option value="December">December</option>
-            </select>
-            <label>Desired Travel Party:</label>
-            <select name="travel_party">
-                <option value="Solo">Traveling Solo</option>
-                <option value="Couple">Traveling as a couple</option>
-                <option value="Family">Traveling as a family</option>
-                <option value="Group">Traveling with a group</option>
-            </select>
-            <label>Primary Reason for Travel:</label>
-            <select name="primary_reason">
-                <option value="Outdoor adventures">Outdoor Adventures</option>
-                <option value="Thrill-seeker's paradise">Thrill Seeking</option>
-                <option value="Relaxation">Relaxation</option>
-                <option value="Jaw dropping scenery">Jaw Dropping Scenery</option>
-                <option value="Foodies' heaven">Foodies' Heaven</option>
-                <option value="Cultural immersion">Cultural Immersion</option>
-            </select>
-            <label>Expected Cost</label>
-            <select name="cost">
-                <option value="$">$ On a budget</option>
-                <option value="$$">$$ Mid Range</option>
-                <option value="$$$">$$$ Luxury Vacation</option>
-            <select>
-            <input type="submit" value = "Find my perfect destination!">
-        </form>
-        <a href = "board.html"> Create my travel vision board</a>
     </div>
 </body>
 </html>
