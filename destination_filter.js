@@ -1,10 +1,4 @@
 console.log("destination filter.js connected")
-// const dropdown_season = document.getElementById("dropdown_season")
-// const dropdown_travel_party = document.getElementById("dropdown_travel_party")
-
-// const searchParams = new URLSearchParams(window.location.search)
-// const id = searchParams.get('id')
-
 
 const searchParams_user = new URLSearchParams(window.location.search)
 const user_id = searchParams_user.get("user_id")
