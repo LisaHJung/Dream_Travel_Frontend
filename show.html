@@ -8,13 +8,9 @@
 </head>
 <body>
     <form action="http://localhost:3000/vision_boards" method="post">
-        <label>Enter your user name:</label>
-        <input type="text" name ="user_name">
-        <label>Enter the destination:</label>
-        <input type="text" name ="destination.name">
-        <input type="submit" value ="Pin it to my vision board">
+        <input type="hidden" name ="user_id">
+        <input type="hidden" name ="destination_id">
+        <input type="submit" value ="Pin this destination to my vision board">
     </form>
-   
- 
 </body>
 </html>
