@@ -7,6 +7,18 @@
     <script src="vision_board.js" defer></script>
 </head>
 <body>
+    <form action="http://localhost:3000/vision_boards" method="patch">
+        <input type="hidden" id="user_id" name ="user_id">
+        <input type="hidden" id="destination_id" name ="destination_id">
+        <input type="text" name="comment" placeholder="write your comment here">
+        <input type="submit" value="Add or update my comments for selected travel destination">
+    </form>
+
+    <form action="http://localhost:3000/vision_boards" method="delete">
+        <input type="hidden" id="user_id" name ="user_id">
+        <input type="hidden" id="destination_id" name ="destination_id">
+        <input type="submit" value="Delete this destination from my travel vision board">
+    </form>
     
 </body>
 </html>
