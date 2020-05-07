@@ -7,17 +7,24 @@
     <script src="vision_board.js" defer></script>
 </head>
 <body>
-    <form action="http://localhost:3000/vision_boards" method="patch">
-        <input type="hidden" id="user_id" name ="user_id">
-        <input type="hidden" id="destination_id" name ="destination_id">
-        <input type="text"  name="comment" placeholder = "Write comment here">
-        <input type="submit" value="Add my comment to selected destination">
-    </form>
+    <div class="comment-update">
+        <form action="" method="post">
+            <input type="hidden" name ="_method" value="patch">
+            <input type="hidden" id="user_id" name ="user_id">
+            <input type="hidden" id="destination_id" name ="destination_id">
+            <input type="string" name="comment" placeholder = "Write comment here">
+            <input type="submit" value="Add my comment to selected destination">
+        </form>
+    </div>
+    <div class="delete-destination">
+        <form action="" method="post">
+            <input type="hidden" name ="_method" value="delete">
+            <input type="hidden" id="user_id" name ="user_id">
+            <input type="hidden" id="destination_id" name ="destination_id">
+            <input type="submit" value="Delete my destination">
+        </form>
+    </div>
 
-    <form action="http://localhost:3000/vision_boards" method="delete">
-        <input type="hidden" id="user_id" name ="user_id">
-        <input type="hidden" id="destination_id" name ="destination_id">
-        <input type="submit" value="Delete selected destination">
-    </form>
+
 </body>
 </html>

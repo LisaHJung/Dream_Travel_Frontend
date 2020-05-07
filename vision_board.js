@@ -1,5 +1,13 @@
 console.log("vision_board.js is connected")
 
+const vision_board_Params = new URLSearchParams(window.location.search)
+const vb_id = vision_board_Params.get("vision_board_id")
+const commentUpdateForm=document.querySelector(".comment-update > form")
+commentUpdateForm.action=`http://localhost:3000/vision_boards/${vb_id}`
+
+const deleteDestination=document.querySelector(".delete-destination > form")
+deleteDestination.action=`http://localhost:3000/vision_boards/${vb_id}`
+
 const searchParams = new URLSearchParams(window.location.search)
 const destination_id = searchParams.get('destination_id')
 
