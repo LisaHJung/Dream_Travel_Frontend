@@ -18,4 +18,6 @@ function displayInfo(destination) {
     const p = document.createElement("p")
     p.innerText = destination.description 
     document.body.appendChild(p)
+
 }
+
