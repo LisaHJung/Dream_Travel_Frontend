@@ -16,7 +16,7 @@ if(month && travel_party && primary_reason && cost) {
     fetch(`http://localhost:3000/destinations?month=${month}&travel_party=${travel_party}&primary_reason=${primary_reason}&cost=${cost}&user_id=${user_id}`)
         .then(response => response.json())
         .then(destinations => destinations.destinations.forEach(destination => {
-            const h1 = document.createElement("h1")
+            const h1 = document.createElement("h2")
             h1.innerHTML = `<a href="destination.html?id=${destination.id}&user_id=${user_id}">${destination.name}</a>`
             document.body.appendChild(h1)                   
         })
