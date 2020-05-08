@@ -6,23 +6,24 @@ body {
 h1 {
     display: block;
     font-size: 2em;
-    margin-block-start: 0.67em;
+    /* margin-block-start: 0 em;
     margin-block-end: 0.67em;
     margin-inline-start: 0px;
-    margin-inline-end: 0px;
+    margin-inline-end: 0px; */
+    margin-right: 1 em;
     font-weight: bold;
     font-family: 'Courier New', Courier, monospace;
     color: blue;
     text-align: center;
-    width: 100vw;
+    width: 100%;
 }
 
 form {
-    max-width: 100%;
+    width: 100%;
     text-align: center;
 }
 img {
-    max-width: 100%
+    width: 100%
 
 }
 form > h1 {

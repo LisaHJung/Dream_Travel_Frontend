@@ -59,12 +59,15 @@ h2 {
 a{
     background-color: rgba(97, 82, 44, 0.304);
     position: relative;
-    color: blueviolet;
+    color: rgb(226, 183, 43);
     left: 50%;
     border-radius: 25px;
     padding: 1rem;
     position: static;
     display: flex;
+    position: absolute;
+    bottom: 318px;
+    left: 900px;
 
 }
 
