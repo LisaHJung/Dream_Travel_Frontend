@@ -52,7 +52,8 @@ h2 {
     font-family: fantasy;
     font-size: xx-large;
     text-align: center;
-    display: flex
+    display: flex;
+    margin: 0px;
 
 }
 
