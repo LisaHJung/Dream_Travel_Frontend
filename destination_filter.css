@@ -47,5 +47,26 @@ input {
     margin: 2rem;
 }
 
+h2 {
+    color: black;
+    font-family: fantasy;
+    font-size: xx-large;
+    text-align: center;
+    display: flex
+
+}
+
+a{
+    background-color: rgba(97, 82, 44, 0.304);
+    position: relative;
+    color: blueviolet;
+    left: 50%;
+    border-radius: 25px;
+    padding: 1rem;
+    position: static;
+    display: flex;
+
+}
+
 
 

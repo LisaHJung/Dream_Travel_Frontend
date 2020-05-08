@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Vision Board</title>
     <script src="vision_board.js" defer></script>
+    <link rel="stylesheet" href="vision_board.css">
 </head>
 <body>
     <div class="comment-update">
@@ -13,7 +14,7 @@
             <input type="hidden" id="user_id" name ="user_id">
             <input type="hidden" id="destination_id" name ="destination_id">
             <input type="string" name="comment" placeholder = "Write comment here">
-            <input type="submit" value="Add my comment to selected destination">
+            <input id= "add_comment" type="submit" value="Add my comment to selected destination">
         </form>
     </div>
     <div class="delete-destination">
@@ -21,7 +22,7 @@
             <input type="hidden" name ="_method" value="delete">
             <input type="hidden" id="user_id" name ="user_id">
             <input type="hidden" id="destination_id" name ="destination_id">
-            <input type="submit" value="Delete my destination">
+            <input id="delete" type="submit" value="Delete this destination">
         </form>
     </div>
 

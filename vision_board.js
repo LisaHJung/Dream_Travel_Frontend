@@ -28,7 +28,7 @@ function displayInfo(destination) {
     h1.innerText = destination.name
     document.body.appendChild(h1)
 
-    const p1 = document.createElement("p1")
+    const p1 = document.createElement("p")
     p1.innerText = destination.location
     document.body.appendChild(p1)    
 }

@@ -1,0 +1,73 @@
+body {
+    background-color: bisque;
+    max-height: 100vh;
+    max-width: 100vw;
+
+}
+#add_comment {
+    background-color: darkorange;
+    padding: .25rem;
+    border-radius: 25px;
+
+}
+
+h1 {
+        display: block;
+        font-size: 2em;
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+        font-family: 'Courier New', Courier, monospace;
+        color: blue;
+        text-align: left;
+}
+
+#delete {
+
+    background-color: crimson;
+    padding: .25rem;
+    color: white;
+    border-radius: 25px;
+}
+
+div {
+    height: 100%;
+    width: 100%;
+}
+
+div.comment-update {
+    display: flex;
+    padding: .25rem;
+   
+}
+
+div.delete-destination {
+    display: flex;
+    padding-bottom: .25rem;
+}
+
+img {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80%;
+    width: 80%
+}
+
+form {
+flex-direction: column;
+display: flex;
+}
+
+p, p1 {
+    font-family: fantasy;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    text-align: left;
+    
+}
