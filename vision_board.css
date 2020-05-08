@@ -21,7 +21,7 @@ h1 {
         font-weight: bold;
         font-family: 'Courier New', Courier, monospace;
         color: blue;
-        text-align: left;
+        text-align: center;
 }
 
 #delete {
@@ -38,23 +38,19 @@ div {
 }
 
 div.comment-update {
-    display: flex;
+    /* display: flex; */
     padding: .25rem;
    
 }
 
 div.delete-destination {
-    display: flex;
+    /* display: flex; */
     padding-bottom: .25rem;
 }
 
 img {
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 80%;
-    width: 80%
+    height: 100%;
+    width: 100%
 }
 
 form {
@@ -68,6 +64,7 @@ p, p1 {
     margin-block-end: 0em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-    text-align: left;
-    
+    text-align: center;
+    color: black;
+    font-family: sans-serif;
 }

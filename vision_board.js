@@ -44,10 +44,7 @@ fetch(`http://localhost:3000/vision_boards/${vb_id}`)
 .then(displayComment)
 
 function displayComment(vision_board){
-    const comment = document.createElement("h1")
-    comment.innerText=vision_board.comment
+    const comment = document.createElement("p")
+    comment.innerText= "My comment: "+vision_board.comment
     document.body.appendChild(comment)
 }
-// const mainPage=document.createElement("p")
-// mainPage.innerHTML= `<a href='destination_filter.html?user_id=${user_id}">Take me back to the search page</a>`
-// document.body.appendChild(p)
