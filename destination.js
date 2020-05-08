@@ -1,8 +1,13 @@
 console.log("destination.js working")
 const searchParams = new URLSearchParams(window.location.search)
-const id = searchParams.get('id')
+const destination_id = searchParams.get('id')
+const user_id = searchParams.get("user_id")
+const destinationFromUserId=document.querySelector("#user_id")
+const destinationID=document.querySelector("#destination_id")
+destinationFromUserId.value=user_id
+destinationID.value=destination_id
 
-fetch(`http://localhost:3000/destinations/${id}`)
+fetch(`http://localhost:3000/destinations/${destination_id}`)
     .then(response => response.json())
     .then(displayInfo)
 

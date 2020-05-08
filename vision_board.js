@@ -1,9 +1,21 @@
 console.log("vision_board.js is connected")
 
-const searchParams = new URLSearchParams(window.location.search)
-const id = searchParams.get('id')
+const params = new URLSearchParams(window.location.search)
+const vb_id = params.get("vision_board_id")
+const commentUpdateForm=document.querySelector(".comment-update > form")
+commentUpdateForm.action=`http://localhost:3000/vision_boards/${vb_id}`
 
-fetch(`http://localhost:3000/vision_board/${id}`)
+const deleteDestination=document.querySelector(".delete-destination > form")
+deleteDestination.action=`http://localhost:3000/vision_boards/${vb_id}`
+
+const destination_id = params.get('destination_id')
+
+const isUpdated = params.get("is_updated")
+if (isUpdated){
+    alert("Your comment has been successfully updated!")
+}
+
+fetch(`http://localhost:3000/destinations/${destination_id}`)
     .then(response => response.json())
     .then(displayInfo)
 
@@ -18,13 +30,5 @@ function displayInfo(destination) {
 
     const p1 = document.createElement("p1")
     p1.innerText = destination.location
-    document.body.appendChild(p1)
-
-    const p = document.createElement("p")
-    p.innerText = destination.description 
-    document.body.appendChild(p)
-    
-    // pinToVisionBoard(destination)
-    jumpToVisionBoard(destination)
-    
+    document.body.appendChild(p1)    
 }
