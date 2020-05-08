@@ -4,10 +4,6 @@ const searchParams_user = new URLSearchParams(window.location.search)
 const user_id = searchParams_user.get("user_id")
 const destinationFromUserId=document.querySelector("#user_id")
 destinationFromUserId.value=user_id
-// const tinkerUserId=[]
-// tinkerUserId.push(user_id)
-// console.log(tinkerUserId)
-
 
 const search = document.querySelector('#search')
 const params = new URLSearchParams(window.location.search)
