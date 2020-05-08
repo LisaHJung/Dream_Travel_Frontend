@@ -2,6 +2,7 @@ console.log("vision_board.js is connected")
 
 const params = new URLSearchParams(window.location.search)
 const vb_id = params.get("vision_board_id")
+
 const commentUpdateForm=document.querySelector(".comment-update > form")
 commentUpdateForm.action=`http://localhost:3000/vision_boards/${vb_id}`
 
@@ -14,7 +15,7 @@ const isUpdated = params.get("is_updated")
     }
 
 const isDeleted = params.get("is_deleted")
-    if (isDeleted ){
+    if (isDeleted){
         alert("The destination has been deleted!")
     }
 
@@ -38,6 +39,15 @@ function displayInfo(destination) {
     document.body.appendChild(p1)    
 }
 
-const mainPage=document.createElement("p")
-mainPage.innerHTML= `<a href='destination_filter.html?user_id=${user_id}">Take me back to the search page</a>`
-document.body.appendChild(p)
+fetch(`http://localhost:3000/vision_boards/${vb_id}`)
+.then(response => response.json())
+.then(displayComment)
+
+function displayComment(vision_board){
+    const comment = document.createElement("h1")
+    comment.innerText=vision_board.comment
+    document.body.appendChild(comment)
+}
+// const mainPage=document.createElement("p")
+// mainPage.innerHTML= `<a href='destination_filter.html?user_id=${user_id}">Take me back to the search page</a>`
+// document.body.appendChild(p)

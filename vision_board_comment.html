@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Vision Board</title>
+    <script src="vision_board.js" defer></script>
+</head>
+<body>
+    <div class="comment-update">
+        <form action="" method="post">
+            <input type="hidden" name ="_method" value="patch">
+            <input type="hidden" id="user_id" name ="user_id">
+            <input type="hidden" id="destination_id" name ="destination_id">
+            <input type="string" name="comment" placeholder = "Write comment here">
+            <input type="submit" value="Add my comment to selected destination">
+        </form>
+    </div>
+    <div class="delete-destination">
+        <form action="" method="post">
+            <input type="hidden" name ="_method" value="delete">
+            <input type="hidden" id="user_id" name ="user_id">
+            <input type="hidden" id="destination_id" name ="destination_id">
+            <input type="submit" value="Delete my destination">
+        </form>
+    </div>
+</body>
+</html>

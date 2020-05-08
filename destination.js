@@ -1,4 +1,5 @@
 console.log("destination.js working")
+
 const searchParams = new URLSearchParams(window.location.search)
 const destination_id = searchParams.get('id')
 const user_id = searchParams.get("user_id")
@@ -28,19 +29,7 @@ function displayInfo(destination) {
     p.innerText = destination.description 
     document.body.appendChild(p)
     
-  
-    jumpToVisionBoard(destination)
-    
 }
 
 
-function jumpToVisionBoard(destination){
-    const p2 = document.createElement("p")
-    p2.innerHTML = `<a href ="vision_board.html">Take me to my travel vision board</a>`
-    document.body.appendChild(p2)
-}
-
-fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=5fab46f6e737cfc57606fad72d949d8c`)
-    .then(response => response.json())
-    .then(console.log)
 
