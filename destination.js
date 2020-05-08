@@ -28,15 +28,11 @@ function displayInfo(destination) {
     p.innerText = destination.description 
     document.body.appendChild(p)
     
-    // pinToVisionBoard(destination)
+  
     jumpToVisionBoard(destination)
     
 }
 
-
-
-// function pinToVisionBoard
-//     fetch("http://localhost3000/vision_boards")
 
 function jumpToVisionBoard(destination){
     const p2 = document.createElement("p")
@@ -44,4 +40,7 @@ function jumpToVisionBoard(destination){
     document.body.appendChild(p2)
 }
 
+fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=5fab46f6e737cfc57606fad72d949d8c`)
+    .then(response => response.json())
+    .then(console.log)
 
