@@ -21,13 +21,15 @@ When choosing their next greatest adventure, there are four primary questions th
 4. What is my budget?
 
 The problem is that we need to visit multiple sites to get all the information we need to make the decision. 
-Travel bucketlist is designed to capture your preferences to four primary questions above and recommend destinations that match your preferences.
+
+Travel Bucket List is designed to capture your preferences to four primary questions above and recommend destinations that match your preferences.
+
 It also helps you to pin these destinations to your travel vision board and make notes of this particular destinations. So whenever your wanderlust strikes, you can easily  make plans with ease by referring to this vision board. 
 
 What are you waiting for? Try it out. Your next greatest adventure awaits you!
 
 ## Intro Video
-[Travel Bucket List]()
+[Travel Bucket List](https://youtu.be/KV5bsrSIDKw)
 
 ## Technologies
 * ActiveRecord - version 6.0
