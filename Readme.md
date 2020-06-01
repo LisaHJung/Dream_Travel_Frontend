@@ -121,7 +121,7 @@ Hope you all enjoy our website and get your adventure on as soon as this pandemi
 
 
 ## Contact
-Created by [Lisa Jung](https://www.linkedin.com/in/lisa-jung-23304b53/) and [Ryan Anderson]()
+Created by [Lisa Jung](https://www.linkedin.com/in/lisa-jung-23304b53/) and [Ryan Anderson](linkedin.com/in/ryan-anderson-bab07967)
 
 Feel free to contact us!!! 
 
